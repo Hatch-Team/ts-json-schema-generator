@@ -4,13 +4,14 @@ import { SubNodeParser } from "./SubNodeParser";
 import { BaseType } from "./Type/BaseType";
 import { DefinitionType } from "./Type/DefinitionType";
 import { ReferenceType } from "./Type/ReferenceType";
-import { symbolAtNode } from "./Utils/symbolAtNode";
+import { ExposeNamingStrategyFunction } from "./ExposeNodeParserNamingStrategy";
 
 export class ExposeNodeParser implements SubNodeParser {
     public constructor(
         private typeChecker: ts.TypeChecker,
         private subNodeParser: SubNodeParser,
-        private expose: "all" | "none" | "export"
+        private expose: "all" | "none" | "export",
+        private exposeNamingStrategy: ExposeNamingStrategyFunction
     ) {}
 
     public supportsNode(node: ts.Node): boolean {
@@ -37,10 +38,6 @@ export class ExposeNodeParser implements SubNodeParser {
         return localSymbol ? "exportSymbol" in localSymbol : false;
     }
     private getDefinitionName(node: ts.Node, context: Context): string {
-        const symbol = symbolAtNode(node)!;
-        const fullName = this.typeChecker.getFullyQualifiedName(symbol).replace(/^".*"\./, "");
-        const argumentIds = context.getArguments().map(arg => arg.getName());
-
-        return argumentIds.length ? `${fullName}<${argumentIds.join(",")}>` : fullName;
+        return this.exposeNamingStrategy(node, context, this.typeChecker);
     }
 }
