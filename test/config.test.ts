@@ -32,7 +32,8 @@ function assertSchema(name: string, userConfig: Config & { type: string }, tscon
         const generator: SchemaGenerator = new SchemaGenerator(
             program,
             createParser(program, config),
-            createFormatter(config)
+            createFormatter(config),
+            config.definitionNameFormatter!
         );
 
         const expected: any = JSON.parse(readFileSync(resolve(`${basePath}/${name}/schema.json`), "utf8"));

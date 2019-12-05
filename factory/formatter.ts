@@ -48,7 +48,7 @@ export function createFormatter(config: Config): TypeFormatter {
         .addTypeFormatter(new LiteralTypeFormatter())
         .addTypeFormatter(new EnumTypeFormatter())
 
-        .addTypeFormatter(new ReferenceTypeFormatter(circularReferenceTypeFormatter))
+        .addTypeFormatter(new ReferenceTypeFormatter(circularReferenceTypeFormatter, config.definitionNameFormatter!))
         .addTypeFormatter(new DefinitionTypeFormatter(circularReferenceTypeFormatter, config.definitionNameFormatter!))
         .addTypeFormatter(new ObjectTypeFormatter(circularReferenceTypeFormatter))
         .addTypeFormatter(new AliasTypeFormatter(circularReferenceTypeFormatter))

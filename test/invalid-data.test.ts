@@ -3,12 +3,13 @@ import * as ts from "typescript";
 import { createFormatter } from "../factory/formatter";
 import { createParser } from "../factory/parser";
 import { createProgram } from "../factory/program";
-import { Config } from "../src/Config";
+import { Config, DEFAULT_CONFIG } from "../src/Config";
 import { SchemaGenerator } from "../src/SchemaGenerator";
 
 function assertSchema(name: string, type: string, message: string) {
     return () => {
         const config: Config = {
+            ...DEFAULT_CONFIG,
             path: resolve(`test/invalid-data/${name}/*.ts`),
             type: type,
             expose: "export",
@@ -21,7 +22,8 @@ function assertSchema(name: string, type: string, message: string) {
         const generator: SchemaGenerator = new SchemaGenerator(
             program,
             createParser(program, config),
-            createFormatter(config)
+            createFormatter(config),
+            config.definitionNameFormatter!
         );
 
         expect(() => generator.createSchema(type)).toThrowError(message);
