@@ -4,7 +4,7 @@ import { SubNodeParser } from "./SubNodeParser";
 import { BaseType } from "./Type/BaseType";
 import { DefinitionType } from "./Type/DefinitionType";
 import { ReferenceType } from "./Type/ReferenceType";
-import { symbolAtNode } from "..";
+import { symbolAtNode } from "./Utils/symbolAtNode";
 
 export class ExposeNodeParser implements SubNodeParser {
     public constructor(

@@ -5,6 +5,6 @@ export abstract class BaseType {
      * Get the definition name of the type. Overrride for non-basic types.
      */
     public getName() {
-        return this.getId().replace(/[^A-Za-z0-9]/g, "");
+        return this.getId();
     }
 }

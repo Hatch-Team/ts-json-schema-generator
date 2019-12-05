@@ -10,7 +10,7 @@ export class DefinitionType extends BaseType {
     }
 
     public getName() {
-        return this.name ? this.name.replace(/[^A-Za-z0-9]/g, "") : super.getName();
+        return this.name || super.getName();
     }
 
     public getType(): BaseType {
