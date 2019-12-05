@@ -5,7 +5,7 @@ import * as ts from "typescript";
 import { createFormatter } from "../factory/formatter";
 import { createParser } from "../factory/parser";
 import { createProgram } from "../factory/program";
-import { Config } from "../src/Config";
+import { Config, DEFAULT_CONFIG } from "../src/Config";
 import { SchemaGenerator } from "../src/SchemaGenerator";
 
 const validator = new Ajv({
@@ -22,6 +22,7 @@ function assertSchema(
 ) {
     return () => {
         const config: Config = {
+            ...DEFAULT_CONFIG,
             path: resolve(`${basePath}/${relativePath}/*.ts`),
             type,
             expose: "export",
@@ -35,7 +36,8 @@ function assertSchema(
         const generator: SchemaGenerator = new SchemaGenerator(
             program,
             createParser(program, config),
-            createFormatter()
+            createFormatter(config),
+            config.definitionNameFormatter!
         );
 
         const schema = generator.createSchema(type);

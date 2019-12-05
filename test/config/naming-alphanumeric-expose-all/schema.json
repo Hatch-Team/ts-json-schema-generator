@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/MyObject",
+  "definitions": {
+    "MyObject": {
+      "type": "object",
+      "properties": {
+        "stringGenericInterface": { "$ref": "#/definitions/GenericInterfacestring" },
+        "pick": { "$ref": "#/definitions/Picked" }
+      },
+      "required": ["stringGenericInterface", "pick"],
+      "additionalProperties": false
+    },
+    "GenericInterfacestring": {
+      "type": "object",
+      "properties": { "privateValue": { "type": "string" } },
+      "required": ["privateValue"],
+      "additionalProperties": false
+    },
+    "Picked": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": { "field2": { "type": "string" } },
+      "required": ["field2"]
+    },
+    "PickBaseInterfaceExcludefield1field2field3field1field3": {
+      "type": "object",
+      "properties": { "field2": { "type": "string" } },
+      "required": ["field2"],
+      "additionalProperties": false
+    }
+  }
+}
