@@ -35,7 +35,7 @@ function assertSchema(
         const generator: SchemaGenerator = new SchemaGenerator(
             program,
             createParser(program, config),
-            createFormatter()
+            createFormatter(config)
         );
 
         const schema = generator.createSchema(type);

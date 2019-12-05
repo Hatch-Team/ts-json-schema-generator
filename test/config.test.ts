@@ -32,13 +32,13 @@ function assertSchema(name: string, userConfig: Config & { type: string }, tscon
         const generator: SchemaGenerator = new SchemaGenerator(
             program,
             createParser(program, config),
-            createFormatter()
+            createFormatter(config)
         );
 
         const expected: any = JSON.parse(readFileSync(resolve(`${basePath}/${name}/schema.json`), "utf8"));
         const actual: any = JSON.parse(JSON.stringify(generator.createSchema(config.type)));
 
-        console.log(JSON.stringify(actual));
+        console.log(JSON.stringify(actual)); //TODO: remove
 
         expect(typeof actual).toBe("object");
         expect(actual).toEqual(expected);
@@ -49,16 +49,28 @@ function assertSchema(name: string, userConfig: Config & { type: string }, tscon
 }
 
 describe("config", () => {
+    const alphaNumericNameFormatter = (name: string) => name.replace(/[^A-Za-z0-9]/g, "");
     it(
-        "expose-naming-alphanumeric",
-        assertSchema("expose-naming-alphanumeric", {
+        "naming-alphanumeric-expose-all",
+        assertSchema("naming-alphanumeric-expose-all", {
             type: "MyObject",
             expose: "all",
             topRef: true,
-            exposeNamingStrategy: "alphanumeric",
+            definitionNameFormatter: alphaNumericNameFormatter,
             jsDoc: "none",
         })
     );
+    it(
+        "naming-expose-none-circular",
+        assertSchema("naming-expose-none-circular", {
+            type: "MyObject",
+            expose: "none",
+            topRef: false,
+            definitionNameFormatter: alphaNumericNameFormatter,
+            jsDoc: "none",
+        })
+    );
+
     it(
         "expose-all-topref-true",
         assertSchema("expose-all-topref-true", {

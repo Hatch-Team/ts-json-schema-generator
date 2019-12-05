@@ -3,7 +3,7 @@ export interface Config {
     type?: string;
     tsconfig?: string;
     expose: "all" | "none" | "export";
-    exposeNamingStrategy?: "default" | "alphanumeric";
+    definitionNameFormatter?: (name: string) => string;
     topRef: boolean;
     jsDoc: "none" | "extended" | "basic";
     sortProps?: boolean;
@@ -20,5 +20,5 @@ export const DEFAULT_CONFIG: Config = {
     strictTuples: false,
     skipTypeCheck: false,
     extraTags: [],
-    exposeNamingStrategy: "default",
+    definitionNameFormatter: (name: string) => name,
 };

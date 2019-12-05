@@ -44,21 +44,13 @@ import { VoidTypeNodeParser } from "../src/NodeParser/VoidTypeNodeParser";
 import { SubNodeParser } from "../src/SubNodeParser";
 import { TopRefNodeParser } from "../src/TopRefNodeParser";
 import { FunctionNodeParser } from "./../src/NodeParser/FunctionNodeParser";
-import { ExposeNamingStrategies } from "../src/ExposeNodeParserNamingStrategy";
 
 export function createParser(program: ts.Program, config: Config): NodeParser {
     const typeChecker = program.getTypeChecker();
     const chainNodeParser = new ChainNodeParser(typeChecker, []);
 
     function withExpose(nodeParser: SubNodeParser): SubNodeParser {
-        return new ExposeNodeParser(
-            typeChecker,
-            nodeParser,
-            config.expose,
-            ExposeNamingStrategies.has(config.exposeNamingStrategy!)
-                ? ExposeNamingStrategies.get(config.exposeNamingStrategy!)!
-                : ExposeNamingStrategies.get("default")!
-        );
+        return new ExposeNodeParser(typeChecker, nodeParser, config.expose);
     }
     function withTopRef(nodeParser: NodeParser): NodeParser {
         return new TopRefNodeParser(chainNodeParser, config.type, config.topRef);
