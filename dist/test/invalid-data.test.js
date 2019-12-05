@@ -4,19 +4,13 @@ const path_1 = require("path");
 const formatter_1 = require("../factory/formatter");
 const parser_1 = require("../factory/parser");
 const program_1 = require("../factory/program");
+const Config_1 = require("../src/Config");
 const SchemaGenerator_1 = require("../src/SchemaGenerator");
 function assertSchema(name, type, message) {
     return () => {
-        const config = {
-            path: path_1.resolve(`test/invalid-data/${name}/*.ts`),
-            type: type,
-            expose: "export",
-            topRef: true,
-            jsDoc: "none",
-            skipTypeCheck: !!process.env.FAST_TEST,
-        };
+        const config = Object.assign(Object.assign({}, Config_1.DEFAULT_CONFIG), { path: path_1.resolve(`test/invalid-data/${name}/*.ts`), type: type, expose: "export", topRef: true, jsDoc: "none", skipTypeCheck: !!process.env.FAST_TEST });
         const program = program_1.createProgram(config);
-        const generator = new SchemaGenerator_1.SchemaGenerator(program, parser_1.createParser(program, config), formatter_1.createFormatter());
+        const generator = new SchemaGenerator_1.SchemaGenerator(program, parser_1.createParser(program, config), formatter_1.createFormatter(config), config.definitionNameFormatter);
         expect(() => generator.createSchema(type)).toThrowError(message);
     };
 }

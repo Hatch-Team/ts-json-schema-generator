@@ -7,8 +7,8 @@ const program_1 = require("./program");
 function createGenerator(config) {
     const program = program_1.createProgram(config);
     const parser = parser_1.createParser(program, config);
-    const formatter = formatter_1.createFormatter();
-    return new SchemaGenerator_1.SchemaGenerator(program, parser, formatter);
+    const formatter = formatter_1.createFormatter(config);
+    return new SchemaGenerator_1.SchemaGenerator(program, parser, formatter, config.definitionNameFormatter);
 }
 exports.createGenerator = createGenerator;
 //# sourceMappingURL=generator.js.map

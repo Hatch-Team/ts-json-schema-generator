@@ -6,10 +6,11 @@ const NodeParser_1 = require("./NodeParser");
 const DefinitionType_1 = require("./Type/DefinitionType");
 const symbolAtNode_1 = require("./Utils/symbolAtNode");
 class SchemaGenerator {
-    constructor(program, nodeParser, typeFormatter) {
+    constructor(program, nodeParser, typeFormatter, nameFormatter) {
         this.program = program;
         this.nodeParser = nodeParser;
         this.typeFormatter = typeFormatter;
+        this.nameFormatter = nameFormatter;
     }
     createSchema(fullName) {
         const rootNodes = this.getRootNodes(fullName);
@@ -74,7 +75,7 @@ class SchemaGenerator {
             ids.set(name, child.getId());
         }
         children.reduce((definitions, child) => {
-            const name = child.getName();
+            const name = this.nameFormatter(child.getName(), child);
             if (!(name in definitions)) {
                 definitions[name] = this.typeFormatter.getDefinition(child.getType());
             }

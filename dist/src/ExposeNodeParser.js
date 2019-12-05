@@ -2,12 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const ts = require("typescript");
 const DefinitionType_1 = require("./Type/DefinitionType");
+const symbolAtNode_1 = require("./Utils/symbolAtNode");
 class ExposeNodeParser {
-    constructor(typeChecker, subNodeParser, expose, exposeNamingStrategy) {
+    constructor(typeChecker, subNodeParser, expose) {
         this.typeChecker = typeChecker;
         this.subNodeParser = subNodeParser;
         this.expose = expose;
-        this.exposeNamingStrategy = exposeNamingStrategy;
     }
     supportsNode(node) {
         return this.subNodeParser.supportsNode(node);
@@ -30,7 +30,10 @@ class ExposeNodeParser {
         return localSymbol ? "exportSymbol" in localSymbol : false;
     }
     getDefinitionName(node, context) {
-        return this.exposeNamingStrategy(node, context, this.typeChecker);
+        const symbol = symbolAtNode_1.symbolAtNode(node);
+        const fullName = this.typeChecker.getFullyQualifiedName(symbol).replace(/^".*"\./, "");
+        const argumentIds = context.getArguments().map(arg => arg.getName());
+        return argumentIds.length ? `${fullName}<${argumentIds.join(",")}>` : fullName;
     }
 }
 exports.ExposeNodeParser = ExposeNodeParser;

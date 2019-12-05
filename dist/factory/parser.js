@@ -42,14 +42,11 @@ const UnknownTypeNodeParser_1 = require("../src/NodeParser/UnknownTypeNodeParser
 const VoidTypeNodeParser_1 = require("../src/NodeParser/VoidTypeNodeParser");
 const TopRefNodeParser_1 = require("../src/TopRefNodeParser");
 const FunctionNodeParser_1 = require("./../src/NodeParser/FunctionNodeParser");
-const ExposeNodeParserNamingStrategy_1 = require("../src/ExposeNodeParserNamingStrategy");
 function createParser(program, config) {
     const typeChecker = program.getTypeChecker();
     const chainNodeParser = new ChainNodeParser_1.ChainNodeParser(typeChecker, []);
     function withExpose(nodeParser) {
-        return new ExposeNodeParser_1.ExposeNodeParser(typeChecker, nodeParser, config.expose, ExposeNodeParserNamingStrategy_1.ExposeNamingStrategies.has(config.exposeNamingStrategy)
-            ? ExposeNodeParserNamingStrategy_1.ExposeNamingStrategies.get(config.exposeNamingStrategy)
-            : ExposeNodeParserNamingStrategy_1.ExposeNamingStrategies.get("default"));
+        return new ExposeNodeParser_1.ExposeNodeParser(typeChecker, nodeParser, config.expose);
     }
     function withTopRef(nodeParser) {
         return new TopRefNodeParser_1.TopRefNodeParser(chainNodeParser, config.type, config.topRef);

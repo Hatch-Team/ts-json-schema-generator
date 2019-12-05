@@ -1,9 +1,10 @@
+import { BaseType } from "./Type/BaseType";
 export interface Config {
     path?: string;
     type?: string;
     tsconfig?: string;
     expose: "all" | "none" | "export";
-    exposeNamingStrategy?: "default" | "alphanumeric";
+    definitionNameFormatter?: (name: string, type: BaseType) => string;
     topRef: boolean;
     jsDoc: "none" | "extended" | "basic";
     sortProps?: boolean;

@@ -8,6 +8,6 @@ exports.DEFAULT_CONFIG = {
     strictTuples: false,
     skipTypeCheck: false,
     extraTags: [],
-    exposeNamingStrategy: "default",
+    definitionNameFormatter: (name, type) => name,
 };
 //# sourceMappingURL=Config.js.map

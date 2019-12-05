@@ -321,9 +321,13 @@
         "version": "0ff503ae2e4623981da229c3bd11b812985e36199641993159e7b65457c3ea48",
         "signature": "0ff503ae2e4623981da229c3bd11b812985e36199641993159e7b65457c3ea48"
       },
+      "../src/Type/BaseType.ts": {
+        "version": "1c9f1121fc1d5ee4375eb5fe006f206610df1d19682fa1e26708097a29318c68",
+        "signature": "b0314f96e51aebb049f7871d1b2e52166279dfc776c367f319c7b63530de6546"
+      },
       "../src/Config.ts": {
-        "version": "7850efeeda698d8bb82b61e2b98d16a6e0f50339b32076bd399a8c75292fce9d",
-        "signature": "aa47cd61016017e97437f80d5c70c111310ce3408af9437229341f82bdcf2e36"
+        "version": "91c0df8be81f796b08d693abf485de6a59c3282add8daffd144a3682a1eb496c",
+        "signature": "548a8db4475dbcbde7318efc640409cd6662503225980d2153cf3fcc989f2d64"
       },
       "../node_modules/typescript/lib/typescript.d.ts": {
         "version": "a999e6b184852e7b868234aca57e9eef8faed858f483166aebb6763d8f04abf5",
@@ -340,10 +344,6 @@
       "../src/Error/LogicError.ts": {
         "version": "46582a53d07b48cb738a3b910f024f80e6e2720d2f5da7d1f396fd9ec0f41c08",
         "signature": "66e1a942b901c9232e196b8a066196ab0d23b45edf8bf8e3779077ceaf55da1f"
-      },
-      "../src/Type/BaseType.ts": {
-        "version": "1c9f1121fc1d5ee4375eb5fe006f206610df1d19682fa1e26708097a29318c68",
-        "signature": "b0314f96e51aebb049f7871d1b2e52166279dfc776c367f319c7b63530de6546"
       },
       "../src/Type/ReferenceType.ts": {
         "version": "5bfaae5c65d03988c53979a05c5ce0a4d3cdfedf0b212b4babcabb4ddd30274f",
@@ -386,8 +386,8 @@
         "signature": "064426f6be9567751b7d02e0b588b37fddd93b09459d0b0ab53013e629a5d7e6"
       },
       "../src/SchemaGenerator.ts": {
-        "version": "2e48e3272b92d0a05d9a9532fbd1bbc38c2b2118aa237b9fdb9023ba6e5b99cb",
-        "signature": "2014ebc9e2198f718494fcb8315f8917e751e501f708e76448adb4f773486f3f"
+        "version": "93c1bb0afb0462c71046e41f4c67b7d1deb59108a0093f2a174861ef61f687d8",
+        "signature": "97862ca0e18ddafb5a52e42a74683bdd3acba02c3cd6d654ac6da45a88f2d4f8"
       },
       "../src/Error/UnknownTypeError.ts": {
         "version": "072437ef6d56101826e4c805232173458ef13d72c57b12838d3506e8bafed7ad",
@@ -454,8 +454,8 @@
         "signature": "b960e9f8bc7051b71fd65978c5812a4012b0ef32c5871e74901ba25b53c1bdac"
       },
       "../src/TypeFormatter/DefinitionTypeFormatter.ts": {
-        "version": "e53bf1f110ec403035a527c57be4d9e543b671c2cd072187f64fbdd239d4fd00",
-        "signature": "66dd49e0da28d4fcdae523eb92e0752d7f9837d76af56166a9463acd22388642"
+        "version": "be1c9a545b47adef1933167d0b456b1356fcc2e5e219a43a75147857c208537b",
+        "signature": "9b01197376bd85a743de8801e041ac55dc75e7121e32d59f945f7160ea64e95a"
       },
       "../src/Type/LiteralType.ts": {
         "version": "deaa26fe6e8abc6db82ee571022f91e654cc609949472cb4c54f972f19c6272e",
@@ -582,8 +582,8 @@
         "signature": "feec6c01fd1c6812c5c9f29e062b04ca1ba7ec3d1d77efc0bb5b7b181f6744c1"
       },
       "../src/TypeFormatter/ReferenceTypeFormatter.ts": {
-        "version": "b6240d51563a2c67da38ba3c7108bf607ebea4abda11088688d48f02cdc37035",
-        "signature": "5a4e6b2b8d95b8fcae37c2a8425880de6bd640a01702f0adc5e13337dc67e6c5"
+        "version": "fb3c93d4f84495a151f4d5a4488442c6572ecebe80f06c219717df70eb3664d9",
+        "signature": "1ad95313de0213ea3bdbe439e652a2da32c4ec4cc9810cb5c96e9b04cd986961"
       },
       "../src/Type/RestType.ts": {
         "version": "0a031c1d017420947c0dbac826da82ed652c108418d9b3bd01da4492a036d63d",
@@ -629,9 +629,17 @@
         "version": "72a502290eb45e1f2caea7ebf6f2075f170bf2a8f1d6ee23bf87b12bf0e93ac9",
         "signature": "fa707c2198b75b0b5074624997b1bd2a3523edd1ec8dd45aaa12a11120d390fc"
       },
-      "../factory/formatter.ts": {
-        "version": "0d81d4ce84aa1754f18ee86b1dfffd06e5d818cc67cf38255d333cb76ea8bf19",
-        "signature": "004fe026bfc4b02db356291993ee63ab9cdea4982cdb8237fba86dbf9aad0e46"
+      "../src/Error/DiagnosticError.ts": {
+        "version": "11b2fa06f59d4131521ac7cd2188af543a1bb23de071d92d2c3c7da322179dbd",
+        "signature": "22bc388d32a8c1ecc5fee4f4887a5ad9f6b8dddf1c70ffc1b2dddb840849aa43"
+      },
+      "../src/Error/UnknownNodeError.ts": {
+        "version": "bcca8337ee3719dab0a26961783aea932fbb2dd220fd222c1c6b60c8bf9026bb",
+        "signature": "f3447c7251410da92b8de10f3ee834df100f133ef2609bb0e5b630ab6075a4be"
+      },
+      "../src/Utils/formatError.ts": {
+        "version": "f7e0294078abc716245a0e23b1d8237522d23e420728d2b4f3ebfad7738a4c31",
+        "signature": "c6154e06982b13a96432b017ba18166cdb4979cb1374e3aee2da904cd7aa5840"
       },
       "../src/AnnotationsReader.ts": {
         "version": "e8fa9d84c419e3c1008d4ebcfb7e0119456bb02dcd862808488c61eca4f4ae07",
@@ -645,10 +653,6 @@
         "version": "552461f50b1a46dbc7089af3d3728f241284a373d6a1c50f5c753a0a90efdba9",
         "signature": "766b9311aa624cfee11e5c10651e3d5407ed82c16e9b90f9d9ae937704ca938d"
       },
-      "../src/Error/UnknownNodeError.ts": {
-        "version": "bcca8337ee3719dab0a26961783aea932fbb2dd220fd222c1c6b60c8bf9026bb",
-        "signature": "f3447c7251410da92b8de10f3ee834df100f133ef2609bb0e5b630ab6075a4be"
-      },
       "../src/SubNodeParser.ts": {
         "version": "a717c3a243ce92c3f2e131646f220673099ebd74f6787aac52939cf9205e2233",
         "signature": "72b79d88134dcc9101e0c0c6f67c5eeddbbd81d0d4712b1e31baafac822f2325"
@@ -657,21 +661,17 @@
         "version": "e22b8d7df902163a8f0ee083fd16b0c2e25c25f9445ca385a0debbc87fb18b6d",
         "signature": "59afc87dac0bde43e62d737c64e0f707a0f3833dd1a45f6dfa954119402cecd0"
       },
-      "../src/CircularReferenceNodeParser.ts": {
-        "version": "a358b279a8ba359890df1d6cedcdb86ed2a23539a5f5099943f479057f1b25ed",
-        "signature": "df2d5a74caec87b77e1b10db06b9ec98942669a7189779524e72081b40101e91"
-      },
-      "../src/Error/DiagnosticError.ts": {
-        "version": "11b2fa06f59d4131521ac7cd2188af543a1bb23de071d92d2c3c7da322179dbd",
-        "signature": "22bc388d32a8c1ecc5fee4f4887a5ad9f6b8dddf1c70ffc1b2dddb840849aa43"
-      },
-      "../src/Utils/formatError.ts": {
-        "version": "f7e0294078abc716245a0e23b1d8237522d23e420728d2b4f3ebfad7738a4c31",
-        "signature": "c6154e06982b13a96432b017ba18166cdb4979cb1374e3aee2da904cd7aa5840"
+      "../src/ExposeNodeParser.ts": {
+        "version": "bc329436ed8f850b47c7fbe9433dd30f17dec39da492c3fd0d032ea1e430bee5",
+        "signature": "8289fd2807296004d186a431f42daea8f20a7a54e0dc026ea78fdaac08316cb3"
       },
       "../src/TopRefNodeParser.ts": {
         "version": "5a0f92c74904b0ccdd5698f1a1a367f52f630b2377dc6978283441c95c556568",
         "signature": "88f313a5ffb22c34d5e9ef189607ca01a27ee75181c002d301df645622e03963"
+      },
+      "../src/CircularReferenceNodeParser.ts": {
+        "version": "a358b279a8ba359890df1d6cedcdb86ed2a23539a5f5099943f479057f1b25ed",
+        "signature": "df2d5a74caec87b77e1b10db06b9ec98942669a7189779524e72081b40101e91"
       },
       "../src/NodeParser/AnyTypeNodeParser.ts": {
         "version": "f4dacf8d9ddc03436187ccbf9bb0a5c96af19379dece5d6c1ffe74349627fa11",
@@ -797,42 +797,6 @@
         "version": "8efe3bfece169827dc380dde43075d2274bd5f36af88e8ab62667b2daeeadfee",
         "signature": "6bb0007fc5a8d52ab1282fe3f8a24be4da29892e35c46884cf04f3e98746c1cd"
       },
-      "../node_modules/@types/minimatch/index.d.ts": {
-        "version": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
-        "signature": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633"
-      },
-      "../node_modules/@types/glob/index.d.ts": {
-        "version": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee",
-        "signature": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee"
-      },
-      "../src/Error/NoRootNamesError.ts": {
-        "version": "23cc86ca267c7e8bf06052a1408bc22afc74b0ca0a85d6f2c8985ef8731c38d3",
-        "signature": "b9926857d439895604ea159ae879e6aca18dd004e9e39d0ff85c1563a258562a"
-      },
-      "../src/Error/NoTSConfigError.ts": {
-        "version": "6b92b8846c99db1e96a4467d7a907610792241acffd07acb180a3129a1b450d3",
-        "signature": "f2e809108ba78825ddf6f5f7be1a385af8fcb0d994af89ce58d7bf5b13082164"
-      },
-      "../factory/program.ts": {
-        "version": "85710c911dd6b540f046b9d8002e3f99c32d4db280fbbe26a7d9c2d2adc1b317",
-        "signature": "d73f1865684a64bd64027112b40f86ac60b21cc3698f4c6eb9838094044f0a28"
-      },
-      "../factory/index.ts": {
-        "version": "481039a99e788f3cbfab83678e752556362353046fe7c73bb45d912f1588b04b",
-        "signature": "481039a99e788f3cbfab83678e752556362353046fe7c73bb45d912f1588b04b"
-      },
-      "../index.ts": {
-        "version": "313df16fecac2d85ce18fb25d912a042ec88de3b631a208738e05ab9677ecf52",
-        "signature": "c61802c35b0513abbce846cded3e8b6f3a15c5326732c4cf68cc9f41ffb5e083"
-      },
-      "../src/ExposeNodeParserNamingStrategy.ts": {
-        "version": "358dcafce0ab717f35f4e5c2fb6887a78bf04a4fbfee3e7346b9ede996f5d1da",
-        "signature": "a8a834b451e760f3eb11ac5e3a058a106d7f5706836121745d3d920f49b1c8ec"
-      },
-      "../src/ExposeNodeParser.ts": {
-        "version": "cff752186499f9c9a951e09418c0506bcf2339ddde2dceb285a1757acd43a539",
-        "signature": "2dfdcea0dbc243d2ad1e652f1147d602fbfb683393ff29f99e6c97fdeb9aaece"
-      },
       "../src/Utils/typeKeys.ts": {
         "version": "8c2e073a255e3db5cca8e1838b06755dc5d2456fd5fa3b5deb668fba11cf6caa",
         "signature": "70ef407ff1902f5e9b0387dbfe4ebb5eee0b90a8a924497046145ceddec008cb"
@@ -878,11 +842,43 @@
         "signature": "6139f6ee8f1a33af383d0ee754cecda8b19ba42cdb4f1c93250ccf358c90c56c"
       },
       "../factory/parser.ts": {
-        "version": "7cbed0512d75966147a6915ee37cb0fcd6011930eff129213b2bb0ea2c1ecb5c",
+        "version": "c1823e560ce7b85cefeec62577c88bd27f3c8ce640a0235cacfbaf5331b05f77",
         "signature": "20edc5c00106a51e78b2440b7f3270c2a306dd0021e0bac55abde86ae915997d"
       },
+      "../node_modules/@types/minimatch/index.d.ts": {
+        "version": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
+        "signature": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633"
+      },
+      "../node_modules/@types/glob/index.d.ts": {
+        "version": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee",
+        "signature": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee"
+      },
+      "../src/Error/NoRootNamesError.ts": {
+        "version": "23cc86ca267c7e8bf06052a1408bc22afc74b0ca0a85d6f2c8985ef8731c38d3",
+        "signature": "b9926857d439895604ea159ae879e6aca18dd004e9e39d0ff85c1563a258562a"
+      },
+      "../src/Error/NoTSConfigError.ts": {
+        "version": "6b92b8846c99db1e96a4467d7a907610792241acffd07acb180a3129a1b450d3",
+        "signature": "f2e809108ba78825ddf6f5f7be1a385af8fcb0d994af89ce58d7bf5b13082164"
+      },
+      "../factory/program.ts": {
+        "version": "85710c911dd6b540f046b9d8002e3f99c32d4db280fbbe26a7d9c2d2adc1b317",
+        "signature": "d73f1865684a64bd64027112b40f86ac60b21cc3698f4c6eb9838094044f0a28"
+      },
+      "../factory/index.ts": {
+        "version": "481039a99e788f3cbfab83678e752556362353046fe7c73bb45d912f1588b04b",
+        "signature": "481039a99e788f3cbfab83678e752556362353046fe7c73bb45d912f1588b04b"
+      },
+      "../index.ts": {
+        "version": "313df16fecac2d85ce18fb25d912a042ec88de3b631a208738e05ab9677ecf52",
+        "signature": "c61802c35b0513abbce846cded3e8b6f3a15c5326732c4cf68cc9f41ffb5e083"
+      },
+      "../factory/formatter.ts": {
+        "version": "8a8b25aa9724d4938f1a5328ae4d6ab3c923b899fabd835a5968c0e3f221913b",
+        "signature": "d97a2c8edd54cb550d73056cd110e348dac97f7cf3383419ac7e499bed9adcd2"
+      },
       "../factory/generator.ts": {
-        "version": "762fbb40edb96be9a113953c90c2f7dd9070133ba73917a52fbcfa99338d04f3",
+        "version": "5f106c79d1bd570630754828468ac96b31a721d4d3d4b3934514ef3a9c08f036",
         "signature": "69f60c8a63348885855e6a4949cc6c1db238b4fb8054ccaf97b510504c2f1c02"
       },
       "../ts-json-schema-generator.ts": {
@@ -898,15 +894,15 @@
         "signature": "b040cc8b4fd1b9d0a74b4dad292fb1554c66ccef626abca4798f532d084a3975"
       },
       "../test/config.test.ts": {
-        "version": "6dc2354123dae850b7b5b97f220c528a700c871365b70343c670291eb1b6ef3d",
+        "version": "fb81d54e0cb0276c19577338f158df239cf588c825c0a6b6c7e8d218356c5b83",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "../test/invalid-data.test.ts": {
-        "version": "be80f7852b25cea72bf491c6a15eb4d618dc0d53960b60d3dbc9b42a17ff1971",
+        "version": "38a4c73e098f8f5061a54b3e06156ea493ff6c7a43d0f95a456a4ef80d59602e",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "../test/valid-data.test.ts": {
-        "version": "c373f83e7e6cc1b4d4dcaa15c70969918af66aac636740ab3825e9c29e48eed9",
+        "version": "e8c2946492a37ddb991e07f558c6ead679967b3e3aad039c8aeb4dfbd3eb11ba",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
@@ -1571,7 +1567,14 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/Type/BaseType.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/Config.ts": [
+        "../src/Type/BaseType.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -1598,12 +1601,6 @@
       ],
       "../src/Error/LogicError.ts": [
         "../src/Error/BaseError.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/Type/BaseType.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2270,34 +2267,28 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../factory/formatter.ts": [
-        "../src/ChainTypeFormatter.ts",
-        "../src/CircularReferenceTypeFormatter.ts",
-        "../src/TypeFormatter.ts",
-        "../src/TypeFormatter/AliasTypeFormatter.ts",
-        "../src/TypeFormatter/AnnotatedTypeFormatter.ts",
-        "../src/TypeFormatter/AnyTypeFormatter.ts",
-        "../src/TypeFormatter/ArrayTypeFormatter.ts",
-        "../src/TypeFormatter/BooleanTypeFormatter.ts",
-        "../src/TypeFormatter/DefinitionTypeFormatter.ts",
-        "../src/TypeFormatter/EnumTypeFormatter.ts",
-        "../src/TypeFormatter/IntersectionTypeFormatter.ts",
-        "../src/TypeFormatter/LiteralTypeFormatter.ts",
-        "../src/TypeFormatter/LiteralUnionTypeFormatter.ts",
-        "../src/TypeFormatter/NeverTypeFormatter.ts",
-        "../src/TypeFormatter/NullTypeFormatter.ts",
-        "../src/TypeFormatter/NumberTypeFormatter.ts",
-        "../src/TypeFormatter/ObjectTypeFormatter.ts",
-        "../src/TypeFormatter/OptionalTypeFormatter.ts",
-        "../src/TypeFormatter/PrimitiveUnionTypeFormatter.ts",
-        "../src/TypeFormatter/ReferenceTypeFormatter.ts",
-        "../src/TypeFormatter/RestTypeFormatter.ts",
-        "../src/TypeFormatter/StringTypeFormatter.ts",
-        "../src/TypeFormatter/TupleTypeFormatter.ts",
-        "../src/TypeFormatter/UndefinedTypeFormatter.ts",
-        "../src/TypeFormatter/UnionTypeFormatter.ts",
-        "../src/TypeFormatter/UnknownTypeFormatter.ts",
-        "../src/TypeFormatter/VoidTypeFormatter.ts",
+      "../src/Error/DiagnosticError.ts": [
+        "../node_modules/typescript/lib/typescript.d.ts",
+        "../src/Error/BaseError.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/Error/UnknownNodeError.ts": [
+        "../node_modules/typescript/lib/typescript.d.ts",
+        "../src/Error/BaseError.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/Utils/formatError.ts": [
+        "../node_modules/@types/node/path.d.ts",
+        "../node_modules/typescript/lib/typescript.d.ts",
+        "../src/Error/BaseError.ts",
+        "../src/Error/DiagnosticError.ts",
+        "../src/Error/UnknownNodeError.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2331,14 +2322,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/Error/UnknownNodeError.ts": [
-        "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/Error/BaseError.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../src/SubNodeParser.ts": [
         "../node_modules/typescript/lib/typescript.d.ts",
         "../src/NodeParser.ts",
@@ -2359,32 +2342,14 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/CircularReferenceNodeParser.ts": [
+      "../src/ExposeNodeParser.ts": [
         "../node_modules/typescript/lib/typescript.d.ts",
         "../src/NodeParser.ts",
         "../src/SubNodeParser.ts",
         "../src/Type/BaseType.ts",
+        "../src/Type/DefinitionType.ts",
         "../src/Type/ReferenceType.ts",
-        "../src/Utils/nodeKey.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/Error/DiagnosticError.ts": [
-        "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/Error/BaseError.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/Utils/formatError.ts": [
-        "../node_modules/@types/node/path.d.ts",
-        "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/Error/BaseError.ts",
-        "../src/Error/DiagnosticError.ts",
-        "../src/Error/UnknownNodeError.ts",
+        "../src/Utils/symbolAtNode.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2395,6 +2360,18 @@
         "../src/NodeParser.ts",
         "../src/Type/BaseType.ts",
         "../src/Type/DefinitionType.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/CircularReferenceNodeParser.ts": [
+        "../node_modules/typescript/lib/typescript.d.ts",
+        "../src/NodeParser.ts",
+        "../src/SubNodeParser.ts",
+        "../src/Type/BaseType.ts",
+        "../src/Type/ReferenceType.ts",
+        "../src/Utils/nodeKey.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2773,183 +2750,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/minimatch/index.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/glob/index.d.ts": [
-        "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/minimatch/index.d.ts",
-        "../node_modules/@types/node/ts3.2/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/Error/NoRootNamesError.ts": [
-        "../src/Error/BaseError.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/Error/NoTSConfigError.ts": [
-        "../src/Error/BaseError.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../factory/program.ts": [
-        "../node_modules/@types/glob/index.d.ts",
-        "../node_modules/@types/node/path.d.ts",
-        "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/Config.ts",
-        "../src/Error/DiagnosticError.ts",
-        "../src/Error/LogicError.ts",
-        "../src/Error/NoRootNamesError.ts",
-        "../src/Error/NoTSConfigError.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../factory/index.ts": [
-        "../factory/formatter.ts",
-        "../factory/generator.ts",
-        "../factory/parser.ts",
-        "../factory/program.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../index.ts": [
-        "../src/Error/BaseError.ts",
-        "../src/Error/LogicError.ts",
-        "../src/Error/DiagnosticError.ts",
-        "../src/Error/NoRootTypeError.ts",
-        "../src/Error/UnknownNodeError.ts",
-        "../src/Error/UnknownTypeError.ts",
-        "../src/Config.ts",
-        "../src/Utils/StringMap.ts",
-        "../src/Utils/uniqueArray.ts",
-        "../src/Utils/formatError.ts",
-        "../src/Utils/derefType.ts",
-        "../src/Utils/symbolAtNode.ts",
-        "../src/Schema/Definition.ts",
-        "../src/Schema/Schema.ts",
-        "../src/Type/BaseType.ts",
-        "../src/Type/AnyType.ts",
-        "../src/Type/NullType.ts",
-        "../src/Type/UndefinedType.ts",
-        "../src/Type/PrimitiveType.ts",
-        "../src/Type/BooleanType.ts",
-        "../src/Type/NumberType.ts",
-        "../src/Type/StringType.ts",
-        "../src/Type/LiteralType.ts",
-        "../src/Type/ArrayType.ts",
-        "../src/Type/UnionType.ts",
-        "../src/Type/IntersectionType.ts",
-        "../src/Type/TupleType.ts",
-        "../src/Type/ObjectType.ts",
-        "../src/Type/EnumType.ts",
-        "../src/Type/AliasType.ts",
-        "../src/Type/ReferenceType.ts",
-        "../src/Type/DefinitionType.ts",
-        "../src/Type/AnnotatedType.ts",
-        "../src/AnnotationsReader.ts",
-        "../src/AnnotationsReader/BasicAnnotationsReader.ts",
-        "../src/AnnotationsReader/ExtendedAnnotationsReader.ts",
-        "../src/TypeFormatter.ts",
-        "../src/SubTypeFormatter.ts",
-        "../src/ChainTypeFormatter.ts",
-        "../src/CircularReferenceTypeFormatter.ts",
-        "../src/TypeFormatter/AnyTypeFormatter.ts",
-        "../src/TypeFormatter/UnknownTypeFormatter.ts",
-        "../src/TypeFormatter/NullTypeFormatter.ts",
-        "../src/TypeFormatter/UndefinedTypeFormatter.ts",
-        "../src/TypeFormatter/NeverTypeFormatter.ts",
-        "../src/TypeFormatter/BooleanTypeFormatter.ts",
-        "../src/TypeFormatter/NumberTypeFormatter.ts",
-        "../src/TypeFormatter/StringTypeFormatter.ts",
-        "../src/TypeFormatter/LiteralTypeFormatter.ts",
-        "../src/TypeFormatter/ArrayTypeFormatter.ts",
-        "../src/TypeFormatter/TupleTypeFormatter.ts",
-        "../src/TypeFormatter/UnionTypeFormatter.ts",
-        "../src/TypeFormatter/IntersectionTypeFormatter.ts",
-        "../src/TypeFormatter/ObjectTypeFormatter.ts",
-        "../src/TypeFormatter/EnumTypeFormatter.ts",
-        "../src/TypeFormatter/AliasTypeFormatter.ts",
-        "../src/TypeFormatter/ReferenceTypeFormatter.ts",
-        "../src/TypeFormatter/DefinitionTypeFormatter.ts",
-        "../src/TypeFormatter/PrimitiveUnionTypeFormatter.ts",
-        "../src/TypeFormatter/LiteralUnionTypeFormatter.ts",
-        "../src/TypeFormatter/AnnotatedTypeFormatter.ts",
-        "../src/NodeParser.ts",
-        "../src/SubNodeParser.ts",
-        "../src/ChainNodeParser.ts",
-        "../src/ExposeNodeParser.ts",
-        "../src/TopRefNodeParser.ts",
-        "../src/CircularReferenceNodeParser.ts",
-        "../src/NodeParser/AnyTypeNodeParser.ts",
-        "../src/NodeParser/UnknownTypeNodeParser.ts",
-        "../src/NodeParser/LiteralNodeParser.ts",
-        "../src/NodeParser/NullLiteralNodeParser.ts",
-        "../src/NodeParser/UndefinedTypeNodeParser.ts",
-        "../src/NodeParser/NeverTypeNodeParser.ts",
-        "../src/NodeParser/NumberLiteralNodeParser.ts",
-        "../src/NodeParser/StringLiteralNodeParser.ts",
-        "../src/NodeParser/BooleanLiteralNodeParser.ts",
-        "../src/NodeParser/BooleanTypeNodeParser.ts",
-        "../src/NodeParser/NumberTypeNodeParser.ts",
-        "../src/NodeParser/StringTypeNodeParser.ts",
-        "../src/NodeParser/EnumNodeParser.ts",
-        "../src/NodeParser/ExpressionWithTypeArgumentsNodeParser.ts",
-        "../src/NodeParser/InterfaceAndClassNodeParser.ts",
-        "../src/NodeParser/ParenthesizedNodeParser.ts",
-        "../src/NodeParser/TypeAliasNodeParser.ts",
-        "../src/NodeParser/TypeLiteralNodeParser.ts",
-        "../src/NodeParser/TypeReferenceNodeParser.ts",
-        "../src/NodeParser/ArrayNodeParser.ts",
-        "../src/NodeParser/IntersectionNodeParser.ts",
-        "../src/NodeParser/UnionNodeParser.ts",
-        "../src/NodeParser/TupleNodeParser.ts",
-        "../src/NodeParser/AnnotatedNodeParser.ts",
-        "../src/NodeParser/CallExpressionParser.ts",
-        "../src/NodeParser/ConditionalTypeNodeParser.ts",
-        "../src/NodeParser/PrefixUnaryExpressionNodeParser.ts",
-        "../src/SchemaGenerator.ts",
-        "../factory/index.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/ExposeNodeParserNamingStrategy.ts": [
-        "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/NodeParser.ts",
-        "../index.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/ExposeNodeParser.ts": [
-        "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/NodeParser.ts",
-        "../src/SubNodeParser.ts",
-        "../src/Type/BaseType.ts",
-        "../src/Type/DefinitionType.ts",
-        "../src/Type/ReferenceType.ts",
-        "../src/ExposeNodeParserNamingStrategy.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../src/Utils/typeKeys.ts": [
         "../src/Type/AnyType.ts",
         "../src/Type/ArrayType.ts",
@@ -3152,7 +2952,195 @@
         "../src/SubNodeParser.ts",
         "../src/TopRefNodeParser.ts",
         "../src/NodeParser/FunctionNodeParser.ts",
-        "../src/ExposeNodeParserNamingStrategy.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/minimatch/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/glob/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/minimatch/index.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/Error/NoRootNamesError.ts": [
+        "../src/Error/BaseError.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/Error/NoTSConfigError.ts": [
+        "../src/Error/BaseError.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../factory/program.ts": [
+        "../node_modules/@types/glob/index.d.ts",
+        "../node_modules/@types/node/path.d.ts",
+        "../node_modules/typescript/lib/typescript.d.ts",
+        "../src/Config.ts",
+        "../src/Error/DiagnosticError.ts",
+        "../src/Error/LogicError.ts",
+        "../src/Error/NoRootNamesError.ts",
+        "../src/Error/NoTSConfigError.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../factory/index.ts": [
+        "../factory/formatter.ts",
+        "../factory/generator.ts",
+        "../factory/parser.ts",
+        "../factory/program.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../index.ts": [
+        "../src/Error/BaseError.ts",
+        "../src/Error/LogicError.ts",
+        "../src/Error/DiagnosticError.ts",
+        "../src/Error/NoRootTypeError.ts",
+        "../src/Error/UnknownNodeError.ts",
+        "../src/Error/UnknownTypeError.ts",
+        "../src/Config.ts",
+        "../src/Utils/StringMap.ts",
+        "../src/Utils/uniqueArray.ts",
+        "../src/Utils/formatError.ts",
+        "../src/Utils/derefType.ts",
+        "../src/Utils/symbolAtNode.ts",
+        "../src/Schema/Definition.ts",
+        "../src/Schema/Schema.ts",
+        "../src/Type/BaseType.ts",
+        "../src/Type/AnyType.ts",
+        "../src/Type/NullType.ts",
+        "../src/Type/UndefinedType.ts",
+        "../src/Type/PrimitiveType.ts",
+        "../src/Type/BooleanType.ts",
+        "../src/Type/NumberType.ts",
+        "../src/Type/StringType.ts",
+        "../src/Type/LiteralType.ts",
+        "../src/Type/ArrayType.ts",
+        "../src/Type/UnionType.ts",
+        "../src/Type/IntersectionType.ts",
+        "../src/Type/TupleType.ts",
+        "../src/Type/ObjectType.ts",
+        "../src/Type/EnumType.ts",
+        "../src/Type/AliasType.ts",
+        "../src/Type/ReferenceType.ts",
+        "../src/Type/DefinitionType.ts",
+        "../src/Type/AnnotatedType.ts",
+        "../src/AnnotationsReader.ts",
+        "../src/AnnotationsReader/BasicAnnotationsReader.ts",
+        "../src/AnnotationsReader/ExtendedAnnotationsReader.ts",
+        "../src/TypeFormatter.ts",
+        "../src/SubTypeFormatter.ts",
+        "../src/ChainTypeFormatter.ts",
+        "../src/CircularReferenceTypeFormatter.ts",
+        "../src/TypeFormatter/AnyTypeFormatter.ts",
+        "../src/TypeFormatter/UnknownTypeFormatter.ts",
+        "../src/TypeFormatter/NullTypeFormatter.ts",
+        "../src/TypeFormatter/UndefinedTypeFormatter.ts",
+        "../src/TypeFormatter/NeverTypeFormatter.ts",
+        "../src/TypeFormatter/BooleanTypeFormatter.ts",
+        "../src/TypeFormatter/NumberTypeFormatter.ts",
+        "../src/TypeFormatter/StringTypeFormatter.ts",
+        "../src/TypeFormatter/LiteralTypeFormatter.ts",
+        "../src/TypeFormatter/ArrayTypeFormatter.ts",
+        "../src/TypeFormatter/TupleTypeFormatter.ts",
+        "../src/TypeFormatter/UnionTypeFormatter.ts",
+        "../src/TypeFormatter/IntersectionTypeFormatter.ts",
+        "../src/TypeFormatter/ObjectTypeFormatter.ts",
+        "../src/TypeFormatter/EnumTypeFormatter.ts",
+        "../src/TypeFormatter/AliasTypeFormatter.ts",
+        "../src/TypeFormatter/ReferenceTypeFormatter.ts",
+        "../src/TypeFormatter/DefinitionTypeFormatter.ts",
+        "../src/TypeFormatter/PrimitiveUnionTypeFormatter.ts",
+        "../src/TypeFormatter/LiteralUnionTypeFormatter.ts",
+        "../src/TypeFormatter/AnnotatedTypeFormatter.ts",
+        "../src/NodeParser.ts",
+        "../src/SubNodeParser.ts",
+        "../src/ChainNodeParser.ts",
+        "../src/ExposeNodeParser.ts",
+        "../src/TopRefNodeParser.ts",
+        "../src/CircularReferenceNodeParser.ts",
+        "../src/NodeParser/AnyTypeNodeParser.ts",
+        "../src/NodeParser/UnknownTypeNodeParser.ts",
+        "../src/NodeParser/LiteralNodeParser.ts",
+        "../src/NodeParser/NullLiteralNodeParser.ts",
+        "../src/NodeParser/UndefinedTypeNodeParser.ts",
+        "../src/NodeParser/NeverTypeNodeParser.ts",
+        "../src/NodeParser/NumberLiteralNodeParser.ts",
+        "../src/NodeParser/StringLiteralNodeParser.ts",
+        "../src/NodeParser/BooleanLiteralNodeParser.ts",
+        "../src/NodeParser/BooleanTypeNodeParser.ts",
+        "../src/NodeParser/NumberTypeNodeParser.ts",
+        "../src/NodeParser/StringTypeNodeParser.ts",
+        "../src/NodeParser/EnumNodeParser.ts",
+        "../src/NodeParser/ExpressionWithTypeArgumentsNodeParser.ts",
+        "../src/NodeParser/InterfaceAndClassNodeParser.ts",
+        "../src/NodeParser/ParenthesizedNodeParser.ts",
+        "../src/NodeParser/TypeAliasNodeParser.ts",
+        "../src/NodeParser/TypeLiteralNodeParser.ts",
+        "../src/NodeParser/TypeReferenceNodeParser.ts",
+        "../src/NodeParser/ArrayNodeParser.ts",
+        "../src/NodeParser/IntersectionNodeParser.ts",
+        "../src/NodeParser/UnionNodeParser.ts",
+        "../src/NodeParser/TupleNodeParser.ts",
+        "../src/NodeParser/AnnotatedNodeParser.ts",
+        "../src/NodeParser/CallExpressionParser.ts",
+        "../src/NodeParser/ConditionalTypeNodeParser.ts",
+        "../src/NodeParser/PrefixUnaryExpressionNodeParser.ts",
+        "../src/SchemaGenerator.ts",
+        "../factory/index.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../factory/formatter.ts": [
+        "../src/ChainTypeFormatter.ts",
+        "../src/CircularReferenceTypeFormatter.ts",
+        "../src/TypeFormatter.ts",
+        "../src/TypeFormatter/AliasTypeFormatter.ts",
+        "../src/TypeFormatter/AnnotatedTypeFormatter.ts",
+        "../src/TypeFormatter/AnyTypeFormatter.ts",
+        "../src/TypeFormatter/ArrayTypeFormatter.ts",
+        "../src/TypeFormatter/BooleanTypeFormatter.ts",
+        "../src/TypeFormatter/DefinitionTypeFormatter.ts",
+        "../src/TypeFormatter/EnumTypeFormatter.ts",
+        "../src/TypeFormatter/IntersectionTypeFormatter.ts",
+        "../src/TypeFormatter/LiteralTypeFormatter.ts",
+        "../src/TypeFormatter/LiteralUnionTypeFormatter.ts",
+        "../src/TypeFormatter/NeverTypeFormatter.ts",
+        "../src/TypeFormatter/NullTypeFormatter.ts",
+        "../src/TypeFormatter/NumberTypeFormatter.ts",
+        "../src/TypeFormatter/ObjectTypeFormatter.ts",
+        "../src/TypeFormatter/OptionalTypeFormatter.ts",
+        "../src/TypeFormatter/PrimitiveUnionTypeFormatter.ts",
+        "../src/TypeFormatter/ReferenceTypeFormatter.ts",
+        "../src/TypeFormatter/RestTypeFormatter.ts",
+        "../src/TypeFormatter/StringTypeFormatter.ts",
+        "../src/TypeFormatter/TupleTypeFormatter.ts",
+        "../src/TypeFormatter/UndefinedTypeFormatter.ts",
+        "../src/TypeFormatter/UnionTypeFormatter.ts",
+        "../src/TypeFormatter/UnknownTypeFormatter.ts",
+        "../src/TypeFormatter/VoidTypeFormatter.ts",
+        "../index.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3730,22 +3718,9 @@
         "../src/SchemaGenerator.ts",
         "../factory/index.ts"
       ],
-      "../src/ExposeNodeParserNamingStrategy.ts": [
-        "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/NodeParser.ts"
-      ],
-      "../factory/parser.ts": [
-        "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/Config.ts",
-        "../src/NodeParser.ts"
-      ],
-      "../src/ExposeNodeParser.ts": [
-        "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/SubNodeParser.ts",
-        "../src/ExposeNodeParserNamingStrategy.ts",
-        "../src/NodeParser.ts",
-        "../src/Type/ReferenceType.ts",
-        "../src/Type/BaseType.ts"
+      "../factory/formatter.ts": [
+        "../index.ts",
+        "../src/TypeFormatter.ts"
       ],
       "../node_modules/commander/typings/index.d.ts": [
         "../node_modules/@types/node/ts3.2/index.d.ts",
@@ -4087,6 +4062,23 @@
         "../src/Type/BaseType.ts",
         "../src/SubNodeParser.ts"
       ],
+      "../src/Error/NoTSConfigError.ts": [
+        "../src/Error/BaseError.ts"
+      ],
+      "../src/Error/NoRootNamesError.ts": [
+        "../src/Error/BaseError.ts"
+      ],
+      "../node_modules/@types/minimatch/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../factory/parser.ts": [
+        "../node_modules/typescript/lib/typescript.d.ts",
+        "../src/Config.ts",
+        "../src/NodeParser.ts"
+      ],
       "../src/NodeParser/FunctionNodeParser.ts": [
         "../node_modules/typescript/lib/typescript.d.ts",
         "../src/Type/BaseType.ts",
@@ -4148,18 +4140,6 @@
         "../src/Type/BaseType.ts",
         "../src/Type/LiteralType.ts",
         "../src/Type/StringType.ts"
-      ],
-      "../src/Error/NoTSConfigError.ts": [
-        "../src/Error/BaseError.ts"
-      ],
-      "../src/Error/NoRootNamesError.ts": [
-        "../src/Error/BaseError.ts"
-      ],
-      "../node_modules/@types/minimatch/index.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/NodeParser/PrefixUnaryExpressionNodeParser.ts": [
         "../src/NodeParser.ts",
@@ -4340,22 +4320,22 @@
         "../src/Type/BaseType.ts",
         "../src/SubNodeParser.ts"
       ],
+      "../src/CircularReferenceNodeParser.ts": [
+        "../src/SubNodeParser.ts",
+        "../node_modules/typescript/lib/typescript.d.ts",
+        "../src/NodeParser.ts",
+        "../src/Type/BaseType.ts"
+      ],
       "../src/TopRefNodeParser.ts": [
         "../src/NodeParser.ts",
         "../node_modules/typescript/lib/typescript.d.ts",
         "../src/Type/BaseType.ts"
       ],
-      "../src/Utils/formatError.ts": [
-        "../src/Error/BaseError.ts"
-      ],
-      "../src/Error/DiagnosticError.ts": [
+      "../src/ExposeNodeParser.ts": [
         "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/Error/BaseError.ts"
-      ],
-      "../src/CircularReferenceNodeParser.ts": [
         "../src/SubNodeParser.ts",
-        "../node_modules/typescript/lib/typescript.d.ts",
         "../src/NodeParser.ts",
+        "../src/Type/ReferenceType.ts",
         "../src/Type/BaseType.ts"
       ],
       "../src/ChainNodeParser.ts": [
@@ -4368,10 +4348,6 @@
       "../src/SubNodeParser.ts": [
         "../src/NodeParser.ts",
         "../node_modules/typescript/lib/typescript.d.ts"
-      ],
-      "../src/Error/UnknownNodeError.ts": [
-        "../node_modules/typescript/lib/typescript.d.ts",
-        "../src/Error/BaseError.ts"
       ],
       "../src/AnnotationsReader/ExtendedAnnotationsReader.ts": [
         "../node_modules/typescript/lib/typescript.d.ts",
@@ -4387,8 +4363,16 @@
         "../node_modules/typescript/lib/typescript.d.ts",
         "../src/Type/AnnotatedType.ts"
       ],
-      "../factory/formatter.ts": [
-        "../src/TypeFormatter.ts"
+      "../src/Utils/formatError.ts": [
+        "../src/Error/BaseError.ts"
+      ],
+      "../src/Error/UnknownNodeError.ts": [
+        "../node_modules/typescript/lib/typescript.d.ts",
+        "../src/Error/BaseError.ts"
+      ],
+      "../src/Error/DiagnosticError.ts": [
+        "../node_modules/typescript/lib/typescript.d.ts",
+        "../src/Error/BaseError.ts"
       ],
       "../src/TypeFormatter/VoidTypeFormatter.ts": [
         "../src/Type/VoidType.ts",
@@ -4450,9 +4434,9 @@
       ],
       "../src/TypeFormatter/ReferenceTypeFormatter.ts": [
         "../src/TypeFormatter.ts",
+        "../src/Type/BaseType.ts",
         "../src/Type/ReferenceType.ts",
         "../src/Schema/Definition.ts",
-        "../src/Type/BaseType.ts",
         "../src/SubTypeFormatter.ts"
       ],
       "../src/TypeFormatter/PrimitiveUnionTypeFormatter.ts": [
@@ -4577,9 +4561,9 @@
       ],
       "../src/TypeFormatter/DefinitionTypeFormatter.ts": [
         "../src/TypeFormatter.ts",
+        "../src/Type/BaseType.ts",
         "../src/Type/DefinitionType.ts",
         "../src/Schema/Definition.ts",
-        "../src/Type/BaseType.ts",
         "../src/SubTypeFormatter.ts"
       ],
       "../src/TypeFormatter/BooleanTypeFormatter.ts": [
@@ -4656,6 +4640,7 @@
         "../node_modules/typescript/lib/typescript.d.ts",
         "../src/NodeParser.ts",
         "../src/TypeFormatter.ts",
+        "../src/Type/BaseType.ts",
         "../src/Schema/Schema.ts"
       ],
       "../src/Utils/symbolAtNode.ts": [
@@ -4703,6 +4688,9 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/Config.ts": [
+        "../src/Type/BaseType.ts"
       ],
       "../node_modules/@types/json-stable-stringify/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
@@ -4850,12 +4838,12 @@
       "../node_modules/@types/node/ts3.2/index.d.ts",
       "../node_modules/commander/typings/index.d.ts",
       "../node_modules/@types/json-stable-stringify/index.d.ts",
+      "../src/Type/BaseType.ts",
       "../src/Config.ts",
       "../node_modules/typescript/lib/typescript.d.ts",
       "../src/Error/BaseError.ts",
       "../src/Error/NoRootTypeError.ts",
       "../src/Error/LogicError.ts",
-      "../src/Type/BaseType.ts",
       "../src/Type/ReferenceType.ts",
       "../src/Utils/nodeKey.ts",
       "../src/NodeParser.ts",
@@ -4927,17 +4915,17 @@
       "../src/TypeFormatter/UnknownTypeFormatter.ts",
       "../src/Type/VoidType.ts",
       "../src/TypeFormatter/VoidTypeFormatter.ts",
-      "../factory/formatter.ts",
+      "../src/Error/DiagnosticError.ts",
+      "../src/Error/UnknownNodeError.ts",
+      "../src/Utils/formatError.ts",
       "../src/AnnotationsReader.ts",
       "../src/AnnotationsReader/BasicAnnotationsReader.ts",
       "../src/AnnotationsReader/ExtendedAnnotationsReader.ts",
-      "../src/Error/UnknownNodeError.ts",
       "../src/SubNodeParser.ts",
       "../src/ChainNodeParser.ts",
-      "../src/CircularReferenceNodeParser.ts",
-      "../src/Error/DiagnosticError.ts",
-      "../src/Utils/formatError.ts",
+      "../src/ExposeNodeParser.ts",
       "../src/TopRefNodeParser.ts",
+      "../src/CircularReferenceNodeParser.ts",
       "../src/NodeParser/AnyTypeNodeParser.ts",
       "../src/NodeParser/UnknownTypeNodeParser.ts",
       "../src/NodeParser/LiteralNodeParser.ts",
@@ -4969,15 +4957,6 @@
       "../src/Utils/narrowType.ts",
       "../src/NodeParser/ConditionalTypeNodeParser.ts",
       "../src/NodeParser/PrefixUnaryExpressionNodeParser.ts",
-      "../node_modules/@types/minimatch/index.d.ts",
-      "../node_modules/@types/glob/index.d.ts",
-      "../src/Error/NoRootNamesError.ts",
-      "../src/Error/NoTSConfigError.ts",
-      "../factory/program.ts",
-      "../factory/index.ts",
-      "../index.ts",
-      "../src/ExposeNodeParserNamingStrategy.ts",
-      "../src/ExposeNodeParser.ts",
       "../src/Utils/typeKeys.ts",
       "../src/NodeParser/IndexedAccessTypeNodeParser.ts",
       "../src/NodeParser/MappedTypeNodeParser.ts",
@@ -4990,6 +4969,14 @@
       "../src/Type/FunctionType.ts",
       "../src/NodeParser/FunctionNodeParser.ts",
       "../factory/parser.ts",
+      "../node_modules/@types/minimatch/index.d.ts",
+      "../node_modules/@types/glob/index.d.ts",
+      "../src/Error/NoRootNamesError.ts",
+      "../src/Error/NoTSConfigError.ts",
+      "../factory/program.ts",
+      "../factory/index.ts",
+      "../index.ts",
+      "../factory/formatter.ts",
       "../factory/generator.ts",
       "../ts-json-schema-generator.ts",
       "../src/NodeParser/UndefinedLiteralNodeParser.ts",

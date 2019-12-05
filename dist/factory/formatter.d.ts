@@ -1,2 +1,3 @@
 import { TypeFormatter } from "../src/TypeFormatter";
-export declare function createFormatter(): TypeFormatter;
+import { Config } from "..";
+export declare function createFormatter(config: Config): TypeFormatter;

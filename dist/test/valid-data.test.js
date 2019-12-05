@@ -6,6 +6,7 @@ const path_1 = require("path");
 const formatter_1 = require("../factory/formatter");
 const parser_1 = require("../factory/parser");
 const program_1 = require("../factory/program");
+const Config_1 = require("../src/Config");
 const SchemaGenerator_1 = require("../src/SchemaGenerator");
 const validator = new Ajv({
     extendRefs: "fail",
@@ -13,17 +14,10 @@ const validator = new Ajv({
 const basePath = "test/valid-data";
 function assertSchema(relativePath, type, jsDoc = "none", extraTags) {
     return () => {
-        const config = {
-            path: path_1.resolve(`${basePath}/${relativePath}/*.ts`),
-            type,
-            expose: "export",
-            topRef: true,
-            jsDoc,
-            extraTags,
-            skipTypeCheck: !!process.env.FAST_TEST,
-        };
+        const config = Object.assign(Object.assign({}, Config_1.DEFAULT_CONFIG), { path: path_1.resolve(`${basePath}/${relativePath}/*.ts`), type, expose: "export", topRef: true, jsDoc,
+            extraTags, skipTypeCheck: !!process.env.FAST_TEST });
         const program = program_1.createProgram(config);
-        const generator = new SchemaGenerator_1.SchemaGenerator(program, parser_1.createParser(program, config), formatter_1.createFormatter());
+        const generator = new SchemaGenerator_1.SchemaGenerator(program, parser_1.createParser(program, config), formatter_1.createFormatter(config), config.definitionNameFormatter);
         const schema = generator.createSchema(type);
         const expected = JSON.parse(fs_1.readFileSync(path_1.resolve(`${basePath}/${relativePath}/schema.json`), "utf8"));
         const actual = JSON.parse(JSON.stringify(schema));

@@ -26,7 +26,7 @@ const UndefinedTypeFormatter_1 = require("../src/TypeFormatter/UndefinedTypeForm
 const UnionTypeFormatter_1 = require("../src/TypeFormatter/UnionTypeFormatter");
 const UnknownTypeFormatter_1 = require("../src/TypeFormatter/UnknownTypeFormatter");
 const VoidTypeFormatter_1 = require("../src/TypeFormatter/VoidTypeFormatter");
-function createFormatter() {
+function createFormatter(config) {
     const chainTypeFormatter = new ChainTypeFormatter_1.ChainTypeFormatter([]);
     const circularReferenceTypeFormatter = new CircularReferenceTypeFormatter_1.CircularReferenceTypeFormatter(chainTypeFormatter);
     chainTypeFormatter
@@ -42,8 +42,8 @@ function createFormatter() {
         .addTypeFormatter(new VoidTypeFormatter_1.VoidTypeFormatter())
         .addTypeFormatter(new LiteralTypeFormatter_1.LiteralTypeFormatter())
         .addTypeFormatter(new EnumTypeFormatter_1.EnumTypeFormatter())
-        .addTypeFormatter(new ReferenceTypeFormatter_1.ReferenceTypeFormatter(circularReferenceTypeFormatter))
-        .addTypeFormatter(new DefinitionTypeFormatter_1.DefinitionTypeFormatter(circularReferenceTypeFormatter))
+        .addTypeFormatter(new ReferenceTypeFormatter_1.ReferenceTypeFormatter(circularReferenceTypeFormatter, config.definitionNameFormatter))
+        .addTypeFormatter(new DefinitionTypeFormatter_1.DefinitionTypeFormatter(circularReferenceTypeFormatter, config.definitionNameFormatter))
         .addTypeFormatter(new ObjectTypeFormatter_1.ObjectTypeFormatter(circularReferenceTypeFormatter))
         .addTypeFormatter(new AliasTypeFormatter_1.AliasTypeFormatter(circularReferenceTypeFormatter))
         .addTypeFormatter(new PrimitiveUnionTypeFormatter_1.PrimitiveUnionTypeFormatter())
