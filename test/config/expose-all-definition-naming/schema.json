@@ -5,13 +5,13 @@
     "MyObject": {
       "type": "object",
       "properties": {
-        "stringGenericInterface": { "$ref": "#/definitions/GenericInterfacestring" },
+        "stringGenericInterface": { "$ref": "#/definitions/GenericInterface_string" },
         "pick": { "$ref": "#/definitions/Picked" }
       },
       "required": ["stringGenericInterface", "pick"],
       "additionalProperties": false
     },
-    "GenericInterfacestring": {
+    "GenericInterface_string": {
       "type": "object",
       "properties": { "privateValue": { "type": "string" } },
       "required": ["privateValue"],
@@ -22,12 +22,6 @@
       "additionalProperties": false,
       "properties": { "field2": { "type": "string" } },
       "required": ["field2"]
-    },
-    "PickBaseInterfaceExcludefield1field2field3field1field3": {
-      "type": "object",
-      "properties": { "field2": { "type": "string" } },
-      "required": ["field2"],
-      "additionalProperties": false
     }
   }
 }

@@ -32,8 +32,7 @@ function assertSchema(name: string, userConfig: Config & { type: string }, tscon
         const generator: SchemaGenerator = new SchemaGenerator(
             program,
             createParser(program, config),
-            createFormatter(config),
-            config.definitionNameFormatter!
+            createFormatter()
         );
 
         const expected: any = JSON.parse(readFileSync(resolve(`${basePath}/${name}/schema.json`), "utf8"));
@@ -48,24 +47,12 @@ function assertSchema(name: string, userConfig: Config & { type: string }, tscon
 }
 
 describe("config", () => {
-    const alphaNumericNameFormatter = (name: string) => name.replace(/[^A-Za-z0-9]/g, "");
     it(
-        "naming-alphanumeric-expose-all",
-        assertSchema("naming-alphanumeric-expose-all", {
+        "expose-all-definition-naming",
+        assertSchema("expose-all-definition-naming", {
             type: "MyObject",
             expose: "all",
             topRef: true,
-            definitionNameFormatter: alphaNumericNameFormatter,
-            jsDoc: "none",
-        })
-    );
-    it(
-        "naming-expose-none-circular",
-        assertSchema("naming-expose-none-circular", {
-            type: "MyObject",
-            expose: "none",
-            topRef: false,
-            definitionNameFormatter: alphaNumericNameFormatter,
             jsDoc: "none",
         })
     );

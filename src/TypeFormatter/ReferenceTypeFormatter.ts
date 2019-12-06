@@ -6,16 +6,13 @@ import { ReferenceType } from "../Type/ReferenceType";
 import { TypeFormatter } from "../TypeFormatter";
 
 export class ReferenceTypeFormatter implements SubTypeFormatter {
-    public constructor(
-        private childTypeFormatter: TypeFormatter,
-        private nameFormatter: (name: string, type: BaseType) => string
-    ) {}
+    public constructor(private childTypeFormatter: TypeFormatter) {}
 
     public supportsType(type: ReferenceType): boolean {
         return type instanceof ReferenceType;
     }
     public getDefinition(type: ReferenceType): Definition {
-        return { $ref: "#/definitions/" + this.nameFormatter(type.getName(), type) };
+        return { $ref: "#/definitions/" + type.getName() };
     }
     public getChildren(type: ReferenceType): BaseType[] {
         if (type.getType() instanceof DefinitionType) {

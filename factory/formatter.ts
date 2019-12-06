@@ -25,9 +25,8 @@ import { UndefinedTypeFormatter } from "../src/TypeFormatter/UndefinedTypeFormat
 import { UnionTypeFormatter } from "../src/TypeFormatter/UnionTypeFormatter";
 import { UnknownTypeFormatter } from "../src/TypeFormatter/UnknownTypeFormatter";
 import { VoidTypeFormatter } from "../src/TypeFormatter/VoidTypeFormatter";
-import { Config } from "..";
 
-export function createFormatter(config: Config): TypeFormatter {
+export function createFormatter(): TypeFormatter {
     const chainTypeFormatter = new ChainTypeFormatter([]);
     const circularReferenceTypeFormatter = new CircularReferenceTypeFormatter(chainTypeFormatter);
 
@@ -48,8 +47,8 @@ export function createFormatter(config: Config): TypeFormatter {
         .addTypeFormatter(new LiteralTypeFormatter())
         .addTypeFormatter(new EnumTypeFormatter())
 
-        .addTypeFormatter(new ReferenceTypeFormatter(circularReferenceTypeFormatter, config.definitionNameFormatter!))
-        .addTypeFormatter(new DefinitionTypeFormatter(circularReferenceTypeFormatter, config.definitionNameFormatter!))
+        .addTypeFormatter(new ReferenceTypeFormatter(circularReferenceTypeFormatter))
+        .addTypeFormatter(new DefinitionTypeFormatter(circularReferenceTypeFormatter))
         .addTypeFormatter(new ObjectTypeFormatter(circularReferenceTypeFormatter))
         .addTypeFormatter(new AliasTypeFormatter(circularReferenceTypeFormatter))
 

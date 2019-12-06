@@ -38,9 +38,18 @@ export class ExposeNodeParser implements SubNodeParser {
     }
     private getDefinitionName(node: ts.Node, context: Context): string {
         const symbol = symbolAtNode(node)!;
+        const maybeTypeDeclaration = node as ts.TypeAliasDeclaration;
+        const isGeneric =
+            !!(maybeTypeDeclaration.typeParameters && maybeTypeDeclaration.typeParameters.length > 0) &&
+            (node.kind === ts.SyntaxKind.InterfaceDeclaration ||
+                node.kind === ts.SyntaxKind.ClassDeclaration ||
+                node.kind === ts.SyntaxKind.TypeAliasDeclaration);
         const fullName = this.typeChecker.getFullyQualifiedName(symbol).replace(/^".*"\./, "");
-        const argumentIds = context.getArguments().map(arg => arg.getName());
+        if (isGeneric) {
+            const argumentIds = context.getArguments().map(arg => arg.getName());
+            return `${fullName}_${argumentIds.join("_")}`;
+        }
 
-        return argumentIds.length ? `${fullName}<${argumentIds.join(",")}>` : fullName;
+        return fullName;
     }
 }

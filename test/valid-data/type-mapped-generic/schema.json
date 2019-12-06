@@ -3,9 +3,9 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {
     "MyObject": {
-      "$ref": "#/definitions/NullableAndPartial<SomeInterface>"
+      "$ref": "#/definitions/NullableAndPartial_SomeInterface"
     },
-    "NullableAndPartial<SomeInterface>": {
+    "NullableAndPartial_SomeInterface": {
       "additionalProperties": false,
       "properties": {
         "bar": {

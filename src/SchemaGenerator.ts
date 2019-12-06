@@ -13,8 +13,7 @@ export class SchemaGenerator {
     public constructor(
         private readonly program: ts.Program,
         private readonly nodeParser: NodeParser,
-        private readonly typeFormatter: TypeFormatter,
-        private readonly nameFormatter: (name: string, type: BaseType) => string
+        private readonly typeFormatter: TypeFormatter
     ) {}
 
     public createSchema(fullName: string | undefined): Schema {
@@ -89,7 +88,7 @@ export class SchemaGenerator {
         }
 
         children.reduce((definitions, child) => {
-            const name = this.nameFormatter(child.getName(), child);
+            const name = child.getName();
             if (!(name in definitions)) {
                 definitions[name] = this.typeFormatter.getDefinition(child.getType());
             }

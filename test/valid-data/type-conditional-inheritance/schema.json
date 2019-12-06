@@ -1,74 +1,55 @@
 {
-    "$ref": "#/definitions/MyObject",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "definitions": {
-        "Map<A>": {
-            "enum": [
-                "a"
-            ],
-            "type": "string"
+  "$ref": "#/definitions/MyObject",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "Map_A": {
+      "enum": ["a"],
+      "type": "string"
+    },
+    "Map_B": {
+      "enum": ["a"],
+      "type": "string"
+    },
+    "Map_C": {
+      "enum": ["a"],
+      "type": "string"
+    },
+    "Map_D": {
+      "enum": ["d"],
+      "type": "string"
+    },
+    "Map_E": {
+      "enum": ["d"],
+      "type": "string"
+    },
+    "Map_F": {
+      "enum": ["f"],
+      "type": "string"
+    },
+    "MyObject": {
+      "additionalProperties": false,
+      "properties": {
+        "a": {
+          "$ref": "#/definitions/Map_A"
         },
-        "Map<B>": {
-            "enum": [
-                "a"
-            ],
-            "type": "string"
+        "b": {
+          "$ref": "#/definitions/Map_B"
         },
-        "Map<C>": {
-            "enum": [
-                "a"
-            ],
-            "type": "string"
+        "c": {
+          "$ref": "#/definitions/Map_C"
         },
-        "Map<D>": {
-            "enum": [
-                "d"
-            ],
-            "type": "string"
+        "d": {
+          "$ref": "#/definitions/Map_D"
         },
-        "Map<E>": {
-            "enum": [
-                "d"
-            ],
-            "type": "string"
+        "e": {
+          "$ref": "#/definitions/Map_E"
         },
-        "Map<F>": {
-            "enum": [
-                "f"
-            ],
-            "type": "string"
-        },
-        "MyObject": {
-            "additionalProperties": false,
-            "properties": {
-                "a": {
-                    "$ref": "#/definitions/Map<A>"
-                },
-                "b": {
-                    "$ref": "#/definitions/Map<B>"
-                },
-                "c": {
-                    "$ref": "#/definitions/Map<C>"
-                },
-                "d": {
-                    "$ref": "#/definitions/Map<D>"
-                },
-                "e": {
-                    "$ref": "#/definitions/Map<E>"
-                },
-                "f": {
-                    "$ref": "#/definitions/Map<F>"
-                }
-            },
-            "required": [
-                "a",
-                "b",
-                "c",
-                "d",
-                "e",
-                "f"
-            ],
-            "type": "object"
+        "f": {
+          "$ref": "#/definitions/Map_F"
         }
+      },
+      "required": ["a", "b", "c", "d", "e", "f"],
+      "type": "object"
     }
+  }
 }
