@@ -5,16 +5,16 @@
       "type": "object",
       "properties": {
         "value1": {
-          "$ref": "#/definitions/MyGeneric_string,number"
+          "$ref": "#/definitions/MyGeneric_string_number"
         },
         "value2": {
-          "$ref": "#/definitions/MyGeneric_number,string"
+          "$ref": "#/definitions/MyGeneric_number_string"
         }
       },
       "required": ["value1", "value2"],
       "additionalProperties": false
     },
-    "MyGeneric_string,number": {
+    "MyGeneric_string_number": {
       "type": "object",
       "properties": {
         "a": {
@@ -27,7 +27,7 @@
       "required": ["a", "b"],
       "additionalProperties": false
     },
-    "MyGeneric_number,string": {
+    "MyGeneric_number_string": {
       "type": "object",
       "properties": {
         "a": {

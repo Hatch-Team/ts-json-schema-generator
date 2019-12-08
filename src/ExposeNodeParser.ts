@@ -45,8 +45,8 @@ export class ExposeNodeParser implements SubNodeParser {
                 node.kind === ts.SyntaxKind.ClassDeclaration ||
                 node.kind === ts.SyntaxKind.TypeAliasDeclaration);
         const fullName = this.typeChecker.getFullyQualifiedName(symbol).replace(/^".*"\./, "");
-        if (isGeneric) {
-            const argumentIds = context.getArguments().map(arg => arg.getName());
+        const argumentIds = context.getArguments().map(arg => arg.getName());
+        if (isGeneric && argumentIds.length) {
             return `${fullName}_${argumentIds.join("_")}`;
         }
 

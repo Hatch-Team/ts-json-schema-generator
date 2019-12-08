@@ -11,7 +11,7 @@
           "$ref": "#/definitions/GenericC_GenericC_GenericA_string"
         },
         "someGeneric": {
-          "$ref": "#/definitions/SomeGeneric_1,2"
+          "$ref": "#/definitions/SomeGeneric_1_2"
         },
         "someAlias": {
           "$ref": "#/definitions/SomeAlias_\"alias\""
@@ -50,7 +50,7 @@
       "required": ["a"],
       "additionalProperties": false
     },
-    "SomeGeneric_1,2": {
+    "SomeGeneric_1_2": {
       "type": "object",
       "properties": {
         "a": {

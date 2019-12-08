@@ -11,7 +11,7 @@
       "required": ["value"],
       "additionalProperties": false
     },
-    "MyGeneric_string,number": {
+    "MyGeneric_string_number": {
       "type": "object",
       "properties": {
         "field": {
@@ -21,7 +21,7 @@
       "required": ["field"],
       "additionalProperties": false
     },
-    "MyGeneric_number,string": {
+    "MyGeneric_number_string": {
       "type": "object",
       "properties": {
         "field": {
