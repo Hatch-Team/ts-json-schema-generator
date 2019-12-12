@@ -42,6 +42,6 @@ export class ExposeNodeParser implements SubNodeParser {
         const argumentIds = context.getArguments().map(arg => arg.getName());
 
         const definitionName = argumentIds.length ? `${fullName}<${argumentIds.join(",")}>` : fullName;
-        return encodeURIComponent(definitionName);
+        return definitionName;
     }
 }
